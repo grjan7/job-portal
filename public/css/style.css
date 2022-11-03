@@ -1,13 +1,13 @@
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 body {
   margin: 0;
-}
-
-html {
-  height: 100%;
+  background-color: #121418;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Helvetica Neue", sans-serif;
+  font-size: 16px;
 }
 
 body,
@@ -17,12 +17,6 @@ body,
 
 #root {
   position: relative;
-}
-
-body {
-  background-color: #121418;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Helvetica Neue", sans-serif;
-  font-size: 16px;
 }
 
 #footer {
@@ -84,9 +78,8 @@ body {
   margin-left: 40px;
 }
 
-
 #joblist {
-  width: 100%;
+  width: 600px;
   padding: 0px;
   padding-bottom: 50px;
 }
@@ -103,8 +96,8 @@ body {
   width: 83%;
 }
 
-#locationscard,
-#skillsetcard,
+#countriescard,
+#skillsetscard,
 #searchcard {
   padding: 10px;
   margin: 5px;
@@ -132,7 +125,6 @@ body {
 .organization {
   color: #cbcbce;
   font-weight: lighter;
-
 }
 
 .job-card {
@@ -159,7 +151,7 @@ input[type="text"]::selection {
   border: 1px solid #4c6272;
 }
 
-button[type="submit"] {
+#search {
   color: #f0f0ff;
   background-color: #4c6272;
   border: 0px;

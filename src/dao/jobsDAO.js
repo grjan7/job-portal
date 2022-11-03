@@ -31,29 +31,26 @@ class JobsDAO {
    */
   static async getJobs(countries, skillsets, page = 0, jobsPerPage = 5) {
 
-    let filter = {};
+    let queryPipeline = [];
 
     if (countries) {
-      let countriesArray = Array.isArray(countries) ? countries : countries.split(", ");
-      filter["countries"] = { $in: countriesArray };
+      const countriesArray = Array.isArray(countries) ? countries : countries.split(", ");
+      queryPipeline.push({ $match: { countries: { $in: countriesArray } } });
     }
 
     if (skillsets) {
       let skillsetsArray = Array.isArray(skillsets) ? skillsets : skillsets.split(", ");
-      filter["skillsets"] = { $in: skillsetsArray };
+      queryPipeline.push({ $match: { skillsets: { $in: skillsetsArray } } });
     }
 
-    const matchStage = { $match: filter };
     const skipStage = { $skip: jobsPerPage * page };
     const limitStage = { $limit: jobsPerPage };
-    const queryPipeline = [
-      matchStage,
-      skipStage,
-      limitStage
-    ]
+
+    const aggregatePipeline = queryPipeline.concat(skipStage, limitStage);
+
 
     try {
-      const results = await (await jobs.aggregate(queryPipeline)).toArray();
+      const results = await (await jobs.aggregate(aggregatePipeline)).toArray();
       return results;
     } catch (e) {
       return { error: "Results too large, be more restrictive in filter." }

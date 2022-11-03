@@ -1,7 +1,22 @@
 'use strict';
 
+import getQueries from "./getQueries.service.js";
+
 const getJobsService = async () => {
-  const url = document.location.href + "jobs";
+  let url = document.location.href + "jobs";
+  const queries = getQueries();
+  const hasQueries = (queries.countries != "") || (queries.skillsets != "");
+  if (hasQueries) {
+    url += "?";
+    if (queries.countries) {
+      url += `countries=${queries.countries}`
+      if (queries.skillsets) {
+        url += `&skillsets=${queries.skillsets}`
+      }
+    }
+
+  }
+
   try {
     const response = await fetch(url);
     const data = await response.json();
