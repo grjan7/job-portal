@@ -3,9 +3,11 @@
 import getQueries from "./getQueries.service.js";
 
 const getJobsService = async () => {
+
   let url = document.location.href + "jobs";
   const queries = getQueries();
   const hasQueries = (queries.countries != "") || (queries.skillsets != "");
+
   if (hasQueries) {
     url += "?";
     if (queries.countries) {
