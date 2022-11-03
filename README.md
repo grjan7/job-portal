@@ -1,31 +1,31 @@
 # job-portal
 job-portal app
 
-## Technology Used
+# Technology Used
 
-### Backend
+## Backend
 - Node.js
 - Express.js
 - MongoDB
 
-### Frontend
+## Frontend
 - HTML
 - CSS
 - JavaScript
 
-## Snapshots
+# Snapshots
 
-### Default Load of Jobs
+## Default Load of Jobs
 
 ![Unfiltered](/snapshots/unfiltered.png)
 
-### Filtered By Country
+## Filtered By Country
 ![country filter](/snapshots/country-filter.png)
 
-### Filtered By Countries
+## Filtered By Countries
 
 ![multiple countries filter](/snapshots/countries-filter.png)
 
-### Filtered By Countries and Skillsets
+## Filtered By Countries and Skillsets
 
 ![countries and skillsets filter](/snapshots/countries-skillsets-filter.png)
