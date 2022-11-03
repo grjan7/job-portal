@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "title": "SDE",
+    "organization": {
+      "name": "HK Developers Tech",
+      "logo": "./assets/hkdevelopers.jpeg"
+    },
+    "location": "India",
+    "skillsets": [
+      "node.js"
+    ],
+    "description": "This job is availble at LinkedIn.<br>Role<br>-writing apis<br>Responsibilities<br>"
+  },
+  {
+    "id": 2,
+    "title": "Node.js Developer",
+    "organization": {
+      "name": "Dot Matrix Inc",
+      "logo": "./assets/dotmatrixinc.jpeg"
+    },
+    "location": "USA",
+    "skillsets": [
+      "node.js",
+      "JavaScript",
+      "TypeScript"
+    ],
+    "description": "This job is expired."
+  },
+  {
+    "id": 3,
+    "title": "Java Developer",
+    "organization": {
+      "name": "Dot Matrix Inc",
+      "logo": "./assets/dotmatrixinc.jpeg"
+    },
+    "location": "USA",
+    "skillsets": [
+      "node.js",
+      "JavaScript",
+      "TypeScript"
+    ],
+    "description": "This job is expired."
+  },
+  {
+    "id": 4,
+    "title": "React Developer",
+    "organization": {
+      "name": "Dot Matrix Inc",
+      "logo": "./assets/dotmatrixinc.jpeg"
+    },
+    "location": "USA",
+    "skillsets": [
+      "node.js",
+      "JavaScript",
+      "TypeScript"
+    ],
+    "description": "This job is expired."
+  }
+]
