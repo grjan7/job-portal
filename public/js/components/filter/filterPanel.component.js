@@ -6,7 +6,6 @@ import skillsetComponent from "./skillsets.component.js";
 import searchComponent from "./search.component.js";
 
 const filterPanelComponent = {
-
   template: `<div id="filterpanel">
   ${titleComponent.template}
   <div id="filter">
@@ -15,7 +14,6 @@ const filterPanelComponent = {
   ${searchComponent.template}
   </div>
   </div>`,
-
   style: ``
 };
 
