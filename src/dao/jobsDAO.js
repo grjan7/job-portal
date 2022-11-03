@@ -68,7 +68,8 @@ class JobsDAO {
     let project = {};
 
     try {
-      cursor = await jobs.find(filter, project)
+      cursor = await jobs.find(filter, project);
+
     } catch (e) {
       console.error(`Unable to issue find command, ${e}`)
       return []

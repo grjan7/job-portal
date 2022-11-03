@@ -8,7 +8,7 @@ const skillMap = (skills) => {
   return skillsEl;
 }
 
-const createJobCard = (job) => `<div class="job-card" id = "${job.id ? job.id : ''}">
+const createJobCard = (job) => `<div class="job-card" id = "${job._id ? job._id : ''}">
         <p class ="job-title">${job.title ? job.title : ''}<br>
         <img alt="" src ="${job.organization.logo ? job.organization.logo : ''}"></img><span class="organization">${job.organization.name ? job.organization.name : ''}</span></p>
         <p class ="job-description">${job.description ? job.description : ''}</p>

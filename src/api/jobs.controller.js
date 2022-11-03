@@ -46,8 +46,8 @@ class JobsController {
    */
   static async apiGetJobById(req, res, next) {
     try {
-      let id = req.params.id || {}
-      let job = await jobsDAO.getJobByID(id)
+      let id = req.params.id || {};
+      let job = await JobsDAO.getJobByID(id)
       if (!job) {
         res.status(404).json({ error: "Not found" })
         return

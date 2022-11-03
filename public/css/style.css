@@ -5,136 +5,14 @@ html {
 
 body {
   margin: 0;
+  min-height: 100vh;
   background-color: #121418;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Helvetica Neue", sans-serif;
   font-size: 16px;
 }
 
-body,
-#root {
-  min-height: 100vh;
-}
-
-#root {
-  position: relative;
-}
-
-#footer {
-  min-height: 100px;
-  background-color: #1b1b1f;
-}
-
-#title {
-  color: #ebebee;
-  padding: 15px 0px;
-  width: auto;
-  border-bottom: 5px solid #5cbfc9;
-  border-radius: 20px;
-  margin-bottom: 50px;
-  margin-top: -20px;
-  text-align: center;
-}
-
-#root {
-  margin: auto;
-}
-
-#panel {
-  display: flex;
-  align-items: stretch;
-}
-
-#filterpanel,
-#joblist,
-#adpanel {
-  min-height: 100px;
-  padding: 10px;
-  margin: 0px 5px;
-  margin-right: -5px;
-  padding-bottom: 50px;
-}
-
-#filter {
-  padding: 20px;
-  background-color: #2f3741;
-  border-radius: 10px;
-  margin-left: 5px;
-}
-
-#adpanel {
-  width: 100%;
-  background-color: #2f3741;
-  border-radius: 5px;
-  margin: 0px 10px;
-}
-
-#adpanel>p {
-  text-align: center;
-  color: #8c9f9f;
-  margin-top: 300px;
+input[type="text"]::selection {
   border: 1px solid #4c6272;
-  padding: 10px;
-  width: 80%;
-  margin-left: 40px;
-}
-
-#joblist {
-  width: 600px;
-  padding: 0px;
-  padding-bottom: 50px;
-}
-
-#jobhead {
-  color: #f0f0ff;
-  font-weight: 200;
-  padding: 15px 38px;
-  border: 1px solid #5cbfc9;
-  border-top: 0px;
-  border-radius: 5px;
-  margin-left: 16px;
-  margin-top: 0px;
-  width: 83%;
-}
-
-#countriescard,
-#skillsetscard,
-#searchcard {
-  padding: 10px;
-  margin: 5px;
-}
-
-.job-title {
-  color: #8ccfc9;
-  padding: 2px 5px;
-  border-radius: 5px;
-  font-weight: bolder;
-}
-
-.job-description {
-  padding: 15px 20px;
-  border: 1px solid #4c6272;
-  border-radius: 5px;
-}
-
-.job-location,
-.organization {
-  text-align: right;
-  font-size: small;
-}
-
-.organization {
-  color: #cbcbce;
-  font-weight: lighter;
-}
-
-.job-card {
-  min-width: 500px;
-  border-radius: 5px;
-  /*background-color: #42414d;*/
-  background-color: #2f3741;
-  color: #dbd5dd;
-  padding: 10px 30px;
-  margin: 10px;
 }
 
 input[type="text"] {
@@ -147,30 +25,8 @@ input[type="text"] {
   border-radius: 2px;
 }
 
-input[type="text"]::selection {
-  border: 1px solid #4c6272;
-}
-
-#search {
-  color: #f0f0ff;
-  background-color: #4c6272;
-  border: 0px;
-  border-radius: 5px;
-  padding: 10px;
-  width: 220px;
-  font-size: 18px;
-}
-
-.skill {
-  border: 1px solid #4c6f6f;
-  color: #2cefbf;
-  border-radius: 10px;
-  padding: 4px 8px;
-  margin: 2px;
-  font-size: small;
-  font-weight: 400;
-}
-
-.job-card:hover {
-  opacity: 0.8;
+#root {
+  position: relative;
+  margin: auto;
+  min-height: 100vh;
 }

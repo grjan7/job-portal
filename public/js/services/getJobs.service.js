@@ -13,8 +13,11 @@ const getJobsService = async () => {
       if (queries.skillsets) {
         url += `&skillsets=${queries.skillsets}`
       }
+    } else {
+      if (queries.skillsets) {
+        url += `skillsets=${queries.skillsets}`
+      }
     }
-
   }
 
   try {

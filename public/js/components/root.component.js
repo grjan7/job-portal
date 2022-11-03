@@ -5,12 +5,17 @@ import jobPanelComponent from "./jobs/jobPanel.component.js";
 import adPanelComponent from "./ad/adPanel.component.js";
 
 const rootComponent = {
+
   template: `<div id="panel">  
   ${filterPanelComponent.template}
   ${jobPanelComponent.template}
   ${adPanelComponent.template}
   </div>`,
-  style: ``
+
+  style: `#panel {
+  display: flex;
+  align-items: stretch;
+  }`
 };
 
 export default rootComponent;

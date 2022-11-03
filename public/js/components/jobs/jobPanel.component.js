@@ -10,6 +10,7 @@ const jobPanelComponent = {
   ${jobsListComponent.template}
   ${paginationComponent.template}
   </div>`,
+
   style: ``
 };
 
