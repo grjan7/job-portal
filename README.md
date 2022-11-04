@@ -72,16 +72,13 @@ HTML5, CSS3, JavaScript
 ### Snapshots
 
 #### Default Load of Jobs
-
 ![Unfiltered](/snapshots/unfiltered.png)
 
-#### Filtered By Country
+#### Filtered By Country [countries: "India"]
 ![country filter](/snapshots/country-filter.png)
 
-#### Filtered By Countries
-
+#### Filtered By Countries [countries: "India, USA"]
 ![multiple countries filter](/snapshots/countries-filter.png)
 
-#### Filtered By Countries and Skillsets
-
+#### Filtered By Countries and Skillsets [countries: "India, USA" & skillsets: "JavaScript"]
 ![countries and skillsets filter](/snapshots/countries-skillsets-filter.png)
