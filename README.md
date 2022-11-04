@@ -20,7 +20,7 @@ DB: MongoDB
 - maximum document served is based on jobsperpage
 - used MongoDB aggregation pipeline to filter data
 
-**Jobs**
+**Data**
 
 ```JSON
 [{
@@ -43,7 +43,7 @@ DB: MongoDB
 - serves job data based on id
 - used MQL to filter data
 
-**Job**
+**Data**
 
 ```JSON
 {
