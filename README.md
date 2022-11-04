@@ -10,11 +10,11 @@ DB: MongoDB
 
 #### Endpoints
 
-**GET /**
+> **GET /**
 
 - serves static files
 
-**GET /jobs?[countries=countries][&skillsets=skillsets][&page=page][&jobsperpage=jobsperpage]**
+> **GET /jobs?[countries=countries][&skillsets=skillsets][&page=page][&jobsperpage=jobsperpage]**
 
 - serves jobs data to requests with/without queries
 - maximum document served is based on jobsperpage
@@ -38,7 +38,7 @@ DB: MongoDB
 
 ```
 
-**GET /jobs/:id**
+> **GET /jobs/:id**
 
 - serves job data based on id
 - used MQL to filter data
