@@ -5,8 +5,9 @@
 ## Technology Used
 ### Backend
 
-Node.js v16.17.0, Express.js
-DB: MongoDB
+- Runtime: Node.js v16.17.0, 
+- Framework: Express.js
+- DB: MongoDB
 
 #### Endpoints
 
@@ -62,7 +63,7 @@ DB: MongoDB
 
 ### Frontend
 
-HTML5, CSS3, JavaScript
+- HTML5, CSS3, JavaScript
 
 **Features**
 - filter panel
