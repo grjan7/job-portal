@@ -1,8 +1,8 @@
-'use strict';
+'use strict'
 
-import jobHeadComponent from "./jobHead.component.js";
-import jobsListComponent from "./jobsList.component.js";
-import paginationComponent from "./pagination.component.js";
+import jobHeadComponent from './jobHead.component.js'
+import jobsListComponent from './jobsList.component.js'
+import paginationComponent from './pagination.component.js'
 
 const jobPanelComponent = {
 
@@ -15,6 +15,6 @@ const jobPanelComponent = {
 
   style: ``
 
-};
+}
 
-export default jobPanelComponent;
+export default jobPanelComponent

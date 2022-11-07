@@ -1,6 +1,6 @@
-'use strict';
+'use strict'
 
-import searchSvgComponent from "./searchSvg.component.js";
+import searchSvgComponent from './searchSvg.component.js'
 
 const searchComponent = {
 
@@ -25,6 +25,6 @@ const searchComponent = {
     font-size: 18px;
   }
   `
-};
+}
 
-export default searchComponent;
+export default searchComponent

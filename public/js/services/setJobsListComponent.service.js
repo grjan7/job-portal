@@ -1,22 +1,22 @@
-'use strict';
+'use strict'
 
-import getJobsService from "./getJobs.service.js";
-import locationSvgComponent from "../components/jobs/locationSvg.component.js";
+import getJobsService from './getJobs.service.js'
+import locationSvgComponent from '../components/jobs/locationSvg.component.js'
 
 const skillMap = (skills) => {
-  const skillsEl = skills.map(skill => `<span class="skill"> ${skill}</span>`).join("");
-  return skillsEl;
+  const skillsEl = skills.map(skill => `<span class="skill"> ${skill}</span>`).join('')
+  return skillsEl
 }
 
 const createJobCard = (job) => {
 
-  const id = job._id ? job._id : '';
-  const title = job.title ? job.title : '';
-  const organizationLogo = job.organization.logo ? job.organization.logo : '';
-  const organizationName = job.organization.name ? job.organization.name : '';
-  const description = job.description ? job.description : '';
-  const skillsets = job.skillsets ? skillMap(job.skillsets) : '';
-  const countries = job.countries ? job.countries : '';
+  const id = job._id ? job._id : ''
+  const title = job.title ? job.title : ''
+  const organizationLogo = job.organization.logo ? job.organization.logo : ''
+  const organizationName = job.organization.name ? job.organization.name : ''
+  const description = job.description ? job.description : ''
+  const skillsets = job.skillsets ? skillMap(job.skillsets) : ''
+  const countries = job.countries ? job.countries : ''
 
   const jobCardComponent = `
   <div class="job-card" id="${id}">
@@ -27,29 +27,29 @@ const createJobCard = (job) => {
     <p class="job-location">${locationSvgComponent.template} ${countries}</p>
   </div>`
 
-  return jobCardComponent;
+  return jobCardComponent
 }
 
 const injectJobListComponent = (data) => {
-  const jobListTemplate = data.map(job => createJobCard(job)).join("\n");
-  const jobListComponent = document.getElementById("joblist");
+  const jobListTemplate = data.map(job => createJobCard(job)).join("\n")
+  const jobListComponent = document.getElementById('joblist')
 
-  jobListComponent.innerHTML = jobListTemplate;
+  jobListComponent.innerHTML = jobListTemplate
 }
 
 const injectJobHeadComponent = (jobsCount) => {
-  const jobsHead = document.getElementById("jobhead");
-  jobsHead.innerHTML = jobsCount + " jobs are available";
+  const jobsHead = document.getElementById('jobhead')
+  jobsHead.innerHTML = jobsCount + ' jobs are available'
 }
 
 const setJobsListComponentService = async () => {
   try {
-    const data = await getJobsService();
-    injectJobListComponent(data);
-    injectJobHeadComponent(data.length);
+    const data = await getJobsService()
+    injectJobListComponent(data)
+    injectJobHeadComponent(data.length)
   } catch (e) {
-    console.error(e);
+    console.error(e)
   }
 }
 
-export default setJobsListComponentService;
+export default setJobsListComponentService

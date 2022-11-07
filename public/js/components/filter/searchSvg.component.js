@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 const searchSvgComponent = {
 
@@ -11,4 +11,4 @@ const searchSvgComponent = {
 
 }
 
-export default searchSvgComponent;
+export default searchSvgComponent

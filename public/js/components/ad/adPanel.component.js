@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 const adPanelComponent = {
 
@@ -32,4 +32,4 @@ const adPanelComponent = {
   `
 }
 
-export default adPanelComponent;
+export default adPanelComponent

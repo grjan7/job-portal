@@ -1,15 +1,14 @@
-'use strict';
+'use strict'
 
-import getQueries from "./getQueries.service.js";
+import getQueries from './getQueries.service.js'
 
 const getJobsService = async () => {
-
-  let url = document.location.href + "jobs";
-  const queries = getQueries();
-  const hasQueries = (queries.countries != "") || (queries.skillsets != "");
+  let url = document.location.href + 'jobs'
+  const queries = getQueries()
+  const hasQueries = (queries.countries != '') || (queries.skillsets != '')
 
   if (hasQueries) {
-    url += "?";
+    url += '?'
     if (queries.countries) {
       url += `countries=${queries.countries}`
       if (queries.skillsets) {
@@ -23,12 +22,12 @@ const getJobsService = async () => {
   }
 
   try {
-    const response = await fetch(url);
-    const data = await response.json();
-    return data;
+    const response = await fetch(url)
+    const data = await response.json()
+    return data
   } catch (e) {
-    console.error(e);
+    console.error(e)
   }
 }
 
-export default getJobsService;
+export default getJobsService

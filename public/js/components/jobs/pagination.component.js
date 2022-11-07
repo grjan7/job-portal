@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 const paginationComponent = {
 
@@ -6,6 +6,6 @@ const paginationComponent = {
 
   style: ``
 
-};
+}
 
-export default paginationComponent;
+export default paginationComponent

@@ -1,5 +1,4 @@
-
-'use strict';
+'use strict'
 
 const jobsListComponent = {
 
@@ -62,6 +61,6 @@ const jobsListComponent = {
     font-weight: 400;
   }
 `
-};
+}
 
-export default jobsListComponent;
+export default jobsListComponent

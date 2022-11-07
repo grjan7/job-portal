@@ -1,5 +1,4 @@
-'use strict';
+'use strict'
 
-require("dotenv").config();
-
-exports = module.exports = require("./src");
+require('dotenv').config()
+module.exports = require('./src')

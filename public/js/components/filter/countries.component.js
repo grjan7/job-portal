@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 const countriesComponent = {
 
@@ -13,6 +13,6 @@ const countriesComponent = {
     margin: 5px;
   }
   `
-};
+}
 
-export default countriesComponent;
+export default countriesComponent

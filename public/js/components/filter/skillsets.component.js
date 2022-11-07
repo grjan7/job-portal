@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 const skillsetComponent = {
 
@@ -13,6 +13,6 @@ const skillsetComponent = {
     margin: 5px;
   }
   `
-};
+}
 
-export default skillsetComponent;
+export default skillsetComponent

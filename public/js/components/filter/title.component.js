@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 const titleComponent = {
 
@@ -16,6 +16,6 @@ const titleComponent = {
     text-align: center;
   }
   `
-};
+}
 
-export default titleComponent;
+export default titleComponent

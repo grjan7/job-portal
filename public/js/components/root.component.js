@@ -1,8 +1,8 @@
-'use strict';
+'use strict'
 
-import filterPanelComponent from "./filter/filterPanel.component.js";
-import jobPanelComponent from "./jobs/jobPanel.component.js";
-import adPanelComponent from "./ad/adPanel.component.js";
+import filterPanelComponent from './filter/filterPanel.component.js'
+import jobPanelComponent from './jobs/jobPanel.component.js'
+import adPanelComponent from './ad/adPanel.component.js'
 
 const rootComponent = {
 
@@ -19,6 +19,6 @@ const rootComponent = {
     align-items: stretch;
   }
   `
-};
+}
 
-export default rootComponent;
+export default rootComponent

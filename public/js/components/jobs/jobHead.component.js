@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 const jobHeadComponent = {
 
@@ -17,6 +17,6 @@ const jobHeadComponent = {
     width: 83%;
   }
   `
-};
+}
 
-export default jobHeadComponent;
+export default jobHeadComponent
