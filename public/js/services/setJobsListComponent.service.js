@@ -19,30 +19,37 @@ const createJobCard = (job) => {
   const countries = job.countries ? job.countries : '';
 
   const jobCardComponent = `
-  <div class="job-card" id = "${id}">
-    <p class ="job-title">${title}<br><img alt="" src="${organizationLogo}"></img><span class="organization">${organizationName}</span></p>
-    <p class ="job-description">${description}</p>
-    <p class ="job-skillset">${skillsets}</p>
-    <p class ="job-location">${locationSvgComponent.template} ${countries}</p>
+  <div class="job-card" id="${id}">
+    <p class="job-title">${title}<br>
+    <img alt="" src="${organizationLogo}"></img><span class="organization">${organizationName}</span></p>
+    <p class="job-description">${description}</p>
+    <p class="job-skillset">${skillsets}</p>
+    <p class="job-location">${locationSvgComponent.template} ${countries}</p>
   </div>`
 
   return jobCardComponent;
 }
 
+const injectJobListComponent = (data) => {
+  const jobListTemplate = data.map(job => createJobCard(job)).join("\n");
+  const jobListComponent = document.getElementById("joblist");
+
+  jobListComponent.innerHTML = jobListTemplate;
+}
+
+const injectJobHeadComponent = (jobsCount) => {
+  const jobsHead = document.getElementById("jobhead");
+  jobsHead.innerHTML = jobsCount + " jobs are available";
+}
 
 const setJobsListComponentService = async () => {
   try {
     const data = await getJobsService();
-    const jobListTemplate = data.map(job => createJobCard(job)).join("\n");
-    const jobListComponent = document.getElementById("joblist");
-    jobListComponent.innerHTML = jobListTemplate;
-
-    const jobsHead = document.getElementById("jobhead");
-    jobsHead.innerHTML = data.length + " jobs are available";
-
+    injectJobListComponent(data);
+    injectJobHeadComponent(data.length);
   } catch (e) {
     console.error(e);
   }
-};
+}
 
 export default setJobsListComponentService;

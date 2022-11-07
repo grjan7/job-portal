@@ -9,6 +9,7 @@ const bootstrapApp = async () => {
 
   const root = document.getElementById("root");
   root.innerHTML = rootComponent.template;
+
   setStyleService();
   await setJobsListComponentService();
   await setEventsService();
