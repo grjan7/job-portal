@@ -8,13 +8,26 @@ const skillMap = (skills) => {
   return skillsEl;
 }
 
-const createJobCard = (job) => `<div class="job-card" id = "${job._id ? job._id : ''}">
-        <p class ="job-title">${job.title ? job.title : ''}<br>
-        <img alt="" src ="${job.organization.logo ? job.organization.logo : ''}"></img><span class="organization">${job.organization.name ? job.organization.name : ''}</span></p>
-        <p class ="job-description">${job.description ? job.description : ''}</p>
-        <p class ="job-skillset">${job.skillsets ? skillMap(job.skillsets) : ''}</p>
-        <p class ="job-location">${locationSvgComponent.template} ${job.countries ? job.countries : ''}</p>
-      </div>`;
+const createJobCard = (job) => {
+
+  const id = job._id ? job._id : '';
+  const title = job.title ? job.title : '';
+  const organizationLogo = job.organization.logo ? job.organization.logo : '';
+  const organizationName = job.organization.name ? job.organization.name : '';
+  const description = job.description ? job.description : '';
+  const skillsets = job.skillsets ? skillMap(job.skillsets) : '';
+  const countries = job.countries ? job.countries : '';
+
+  const jobCardComponent = `
+  <div class="job-card" id = "${id}">
+    <p class ="job-title">${title}<br><img alt="" src="${organizationLogo}"></img><span class="organization">${organizationName}</span></p>
+    <p class ="job-description">${description}</p>
+    <p class ="job-skillset">${skillsets}</p>
+    <p class ="job-location">${locationSvgComponent.template} ${countries}</p>
+  </div>`
+
+  return jobCardComponent;
+}
 
 
 const setJobsListComponentService = async () => {

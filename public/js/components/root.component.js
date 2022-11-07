@@ -6,16 +6,20 @@ import adPanelComponent from "./ad/adPanel.component.js";
 
 const rootComponent = {
 
-  template: `<div id="panel">  
-  ${filterPanelComponent.template}
-  ${jobPanelComponent.template}
-  ${adPanelComponent.template}
+  template: `
+  <div id="panel">  
+    ${filterPanelComponent.template}
+    ${jobPanelComponent.template}
+    ${adPanelComponent.template}
   </div>`,
 
-  style: `#panel {
-  display: flex;
-  align-items: stretch;
-  }`
+  style: `
+  #panel {
+    display: flex;
+    align-items: stretch;
+  }
+  `
+
 };
 
 export default rootComponent;
