@@ -33,7 +33,6 @@ const filterPanelComponent = {
     margin-left: 5px;
   }
   `
-
 };
 
 export default filterPanelComponent;

@@ -19,7 +19,6 @@ const rootComponent = {
     align-items: stretch;
   }
   `
-
 };
 
 export default rootComponent;

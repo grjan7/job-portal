@@ -25,7 +25,6 @@ const searchComponent = {
     font-size: 18px;
   }
   `
-
 };
 
 export default searchComponent;

@@ -13,7 +13,6 @@ const skillsetComponent = {
     margin: 5px;
   }
   `
-
 };
 
 export default skillsetComponent;

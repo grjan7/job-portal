@@ -62,7 +62,6 @@ const jobsListComponent = {
     font-weight: 400;
   }
 `
-
 };
 
 export default jobsListComponent;

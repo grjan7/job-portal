@@ -17,7 +17,6 @@ const jobHeadComponent = {
     width: 83%;
   }
   `
-
 };
 
 export default jobHeadComponent;

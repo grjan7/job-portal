@@ -30,7 +30,6 @@ const adPanelComponent = {
     margin-left: 40px;
   }
   `
-
 }
 
 export default adPanelComponent;

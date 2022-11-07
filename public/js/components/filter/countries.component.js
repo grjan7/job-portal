@@ -13,7 +13,6 @@ const countriesComponent = {
     margin: 5px;
   }
   `
-
 };
 
 export default countriesComponent;

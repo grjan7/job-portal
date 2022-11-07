@@ -16,7 +16,6 @@ const titleComponent = {
     text-align: center;
   }
   `
-
 };
 
 export default titleComponent;
